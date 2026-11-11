@@ -1,16 +1,47 @@
-# React + Vite
+# Görev Yöneticisi (Task Manager) - Frontend Projesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Bu proje, modern web geliştirme süreçlerini kavramak ve pekiştirmek amacıyla geliştirilmiş, **CRUD (Create, Read, Update, Delete)** işlemlerini barındıran bir Görev Yöneticisi (Todo App) uygulamasıdır. Kullanıcıların verileri tarayıcı hafızasında (LocalStorage) tutularak veri kalıcılığı sağlanmıştır.
 
-Currently, two official plugins are available:
+## 🚀 Proje Çıktıları ve Özellikler
+- **Görev Ekleme:** Kullanıcılar listeye yeni bir görev ekleyebilir.
+- **Görev Listeleme:** Eklenen tüm görevler arayüzde anlık olarak görüntülenir.
+- **Görev Güncelleme (Düzenleme & Tamamlama):** Mevcut görevlerin metinleri güncellenebilir veya "Tamamlandı" olarak işaretlenerek üstü çizilebilir.
+- **Görev Silme:** İstenilen görev listeden tamamen kaldırılabilir.
+- **Veri Kalıcılığı:** Tüm veriler `LocalStorage`'a kaydedilir, sayfa yenilendiğinde veri kaybı yaşanmaz.
+- **Responsive Tasarım:** Uygulama arayüzü her cihazda düzgün görünecek şekilde tasarlanmıştır.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Kullanılan Teknolojiler
+- **ReactJS:** Kullanıcı arayüzü ve state yönetimi (`useState`, `useEffect` hook'ları).
+- **Vite:** Hızlı ve modern frontend derleme aracı.
+- **Tailwind CSS:** Hızlı, esnek ve modern arayüz stil optimizasyonları.
+- **LocalStorage:** Tarayıcı tabanlı veri tabanı simülasyonu.
 
-## React Compiler
+## 📸 Ekran Görüntüsü
+![Görev Yöneticisi Ekran Görüntüsü](./[Ekran Görüntüsü İsmi, örn: screenshot.png])
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔗 Canlı Önizleme
+Projeyi canlı olarak denemek için tıklayın: **[Netlify Canlı Linki Buraya Gelecek]**
 
-## Expanding the Oxlint configuration
+## 💻 Kurulum ve Çalıştırma
+Projeyi kendi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. **Projeyi Klonlayın:**
+   ```bash
+   git clone https://github.com/<senin-kullanici-adin>/gorev-yoneticisi.git
+   ```
+2. **Proje Klasörüne Girin:**
+   ```bash
+   cd gorev-yoneticisi
+   ```
+3. **Gerekli Paketleri Yükleyin:**
+   ```bash
+   npm install
+   ```
+4. **Geliştirici Sunucusunu Başlatın:**
+   ```bash
+   npm run dev
+   ```
+   *Terminalde beliren `http://localhost:5173/` adresine tıklayarak projeyi tarayıcınızda görüntüleyebilirsiniz.*
+
+---
+*Bu proje, TNC Group Web Geliştirme Javascript Proje Yönergesi kapsamında geliştirilmiştir.*
