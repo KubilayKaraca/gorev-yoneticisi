@@ -17,17 +17,17 @@ Bu proje, modern web geliştirme süreçlerini kavramak ve pekiştirmek amacıyl
 - **LocalStorage:** Tarayıcı tabanlı veri tabanı simülasyonu.
 
 ## 📸 Ekran Görüntüsü
-![Görev Yöneticisi Ekran Görüntüsü](./[Ekran Görüntüsü İsmi, örn: screenshot.png])
+![Görev Yöneticisi Ekran Görüntüsü](./ekran-goruntusu.png)
 
 ## 🔗 Canlı Önizleme
-Projeyi canlı olarak denemek için tıklayın: **[Netlify Canlı Linki Buraya Gelecek]**
+Projeyi canlı olarak denemek için tıklayın: **[Görev Yöneticisi Canlı Önizleme](https://kubilay-gorev-yoneticisi.netlify.app/)**
 
 ## 💻 Kurulum ve Çalıştırma
 Projeyi kendi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
 1. **Projeyi Klonlayın:**
    ```bash
-   git clone https://github.com/<senin-kullanici-adin>/gorev-yoneticisi.git
+   git clone https://github.com/KubilayKaraca/gorev-yoneticisi.git
    ```
 2. **Proje Klasörüne Girin:**
    ```bash
