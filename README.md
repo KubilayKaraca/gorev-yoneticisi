@@ -16,6 +16,20 @@ Bu proje, modern web geliştirme süreçlerini kavramak ve pekiştirmek amacıyl
 - **Tailwind CSS:** Hızlı, esnek ve modern arayüz stil optimizasyonları.
 - **LocalStorage:** Tarayıcı tabanlı veri tabanı simülasyonu.
 
+## 📁 Proje Yapısı
+```text
+src/
+├── Components/
+│   └── TaskManager.jsx   # Ekleme, listeleme, güncelleme ve silme işlemleri
+├── Pages/
+│   └── TasksPage.jsx     # Görevler sayfası
+├── Interfaces/
+│   └── Task.js           # Görev (Task) veri yapısı
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
 ## 📸 Ekran Görüntüsü
 ![Görev Yöneticisi Ekran Görüntüsü](./ekran-goruntusu.png)
 

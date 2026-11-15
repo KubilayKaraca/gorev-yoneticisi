@@ -1,9 +1,15 @@
 import { useState, useEffect } from 'react';
+import { createTask } from '../Interfaces/Task';
 
 const TaskManager = () => {
   const [tasks, setTasks] = useState(() => {
-    const savedTasks = localStorage.getItem('tasks');
-    return savedTasks ? JSON.parse(savedTasks) : [];
+    try {
+      const savedTasks = localStorage.getItem('tasks');
+      const parsedTasks = savedTasks ? JSON.parse(savedTasks) : [];
+      return Array.isArray(parsedTasks) ? parsedTasks : [];
+    } catch {
+      return [];
+    }
   });
   
   const [inputValue, setInputValue] = useState('');
@@ -17,12 +23,7 @@ const TaskManager = () => {
   const handleAddTask = (e) => {
     e.preventDefault();
     if (!inputValue.trim()) return;
-    const newTask = {
-      id: Date.now(), 
-      text: inputValue,
-      completed: false,
-    };
-    setTasks([...tasks, newTask]);
+    setTasks([...tasks, createTask(inputValue)]);
     setInputValue('');
   };
 
@@ -36,9 +37,10 @@ const TaskManager = () => {
   };
 
   const handleSaveEdit = (id) => {
+    if (!editValue.trim()) return;
     setTasks(
       tasks.map((task) =>
-        task.id === id ? { ...task, text: editValue } : task
+        task.id === id ? { ...task, text: editValue.trim() } : task
       )
     );
     setEditId(null);

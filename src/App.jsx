@@ -1,11 +1,7 @@
-import TaskManager from './Components/TaskManager';
+import TasksPage from './Pages/TasksPage';
 
 function App() {
-  return (
-    <div className="min-h-screen bg-gray-100 py-8">
-      <TaskManager />
-    </div>
-  );
+  return <TasksPage />;
 }
 
 export default App;
